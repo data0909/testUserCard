@@ -1,0 +1,27 @@
+<html ng-app = "mainApp">
+<head>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js" ></script>
+    <script src="mainCtrl.js" type="text/javascript"></script>
+    <script src="Myservice.js"></script>
+</head>
+
+<body  ng-controller="mainCtrl">
+
+    <div name  = "userCard">
+            <p>{{contents[0].id}}</p>
+            <p>{{contents[0].username}}</p>
+            <p>{{contents[0].address.city}}</p>
+            <p>{{contents[0].email}}</p>
+            <p>{{contents[0].phone}}</p>
+            
+        <button type="button" name= "ViewTodo" id = "ViewTodo" ng-click="ViewToDo()">View Todo</button>
+    </div>
+                
+            
+
+                
+            </div>
+        
+    
+</body>
+</html>
